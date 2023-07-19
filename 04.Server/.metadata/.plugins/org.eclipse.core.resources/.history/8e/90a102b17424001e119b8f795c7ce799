@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+			<legend>학점확인프로그램</legend>
+			<table border="1px solid black">
+			
+			
+			</table>
+	</fieldset>
+</body>
+</html>

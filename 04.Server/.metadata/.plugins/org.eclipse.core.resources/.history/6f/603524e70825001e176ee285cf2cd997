@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<div id="result-area"></div>
+	<button id="req-btn">데이터요청</button>
+	
+	<script type="./js/jquery-3.7.0.js"></script>
+	<script>
+
+		$("#req-btn").on("click",function(){
+			$.ajax({
+			 	url: "Gson",
+				success:function(res){
+					console.log("버튼 동작");
+					console.log(res.data, res.data2);
+				},
+				error:function(){
+					alert("요청실패..");
+				}
+			});	// end ajax
+			
+		});// end event
+	
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<div id="result-area"></div>
+	<button id="req-btn">데이터요청</button>
+	
+	<script type="./js/jquery-3.7.0.js"></script>
+	<script>
+		
+	
+		// 만들어진 서버 프로그램에 요청하여 받아온 정보를 콘솔창에 출력
+		// 경로 : /Gson
+		$.("#req-btn").on("click",function(){
+			$.ajax({
+			 	url: "Gson",
+				success:function(res){
+					console.log(res);
+				},
+				error:function(){
+					alert("요청실패..");
+				}
+			});	// end ajax
+			
+		});// end event
+	
+	
+	</script>
+</body>
+</html>
